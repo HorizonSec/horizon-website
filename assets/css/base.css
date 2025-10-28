@@ -423,6 +423,17 @@ section:nth-child(even) {
     color: var(--accent-blue);
 }
 
+.module-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.module-card.featured {
+    border-color: var(--accent-blue);
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.1);
+}
+
 /* Footer */
 footer {
     background: var(--primary-bg);

@@ -38,9 +38,6 @@
 }
 
 /* Framework Section on About Page */
-.framework {
-    background: var(--secondary-bg);
-}
 
 .modules-grid {
     display: grid;
@@ -148,7 +145,6 @@
 /* Founders Section */
 .founders {
     padding: 80px 0;
-    background: var(--secondary-bg);
 }
 
 .founders-grid {

@@ -4,7 +4,6 @@
 
 /* Community Intro Section */
 .community-intro {
-    background: var(--primary-bg);
     text-align: center;
 }
 
@@ -20,9 +19,6 @@
 }
 
 /* Ways to Contribute Section */
-.ways-to-contribute {
-    background: var(--primary-bg);
-}
 
 /* Community Section */
 .community-channels {
