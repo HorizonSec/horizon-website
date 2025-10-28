@@ -1,0 +1,349 @@
+/* ============================
+   ROADMAP PAGE SPECIFIC STYLES
+   ============================ */
+
+/* Roadmap Section */
+.roadmap {
+    background: var(--secondary-bg);
+}
+
+.roadmap-status {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.status-badge.current {
+    background: rgba(255, 159, 0, 0.2);
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+}
+
+.status-badge.alpha {
+    background: rgba(255, 255, 0, 0.2);
+    color: #ffff00;
+    border: 1px solid #ffff00;
+}
+
+.status-badge.planning {
+    background: rgba(0, 123, 255, 0.2);
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.modules-roadmap {
+    display: grid;
+    gap: 2rem;
+}
+
+.module-roadmap {
+    background: var(--tertiary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.module-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.module-info h3 {
+    flex: 1;
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.milestones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.milestone {
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.milestone.completed {
+    background: rgba(0, 204, 102, 0.2);
+    color: var(--success-color);
+}
+
+.milestone.in-progress {
+    background: rgba(255, 159, 0, 0.2);
+    color: var(--warning-color);
+}
+
+.milestone.upcoming {
+    background: rgba(136, 136, 136, 0.2);
+    color: var(--text-muted);
+}
+
+.expected-release {
+    color: var(--accent-blue);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Timeline */
+.roadmap-timeline {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--border-color);
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+}
+
+.timeline-item.completed::after {
+    background: var(--success-color);
+}
+
+.timeline-item.in-progress::after {
+    background: var(--warning-color);
+}
+
+.timeline-content {
+    background: var(--tertiary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.timeline-date {
+    color: var(--accent-blue);
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Progress bars */
+.progress-section {
+    margin-top: 3rem;
+}
+
+.progress-item {
+    margin-bottom: 2rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.progress-label {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.progress-percentage {
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Version timeline */
+.version-timeline {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.version-card {
+    background: var(--tertiary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.version-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-blue);
+}
+
+.version-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.version-number {
+    color: var(--accent-blue);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.version-status {
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.version-features {
+    list-style: none;
+}
+
+.version-features li {
+    padding: 0.3rem 0;
+    padding-left: 1rem;
+    position: relative;
+    color: var(--text-secondary);
+}
+
+.version-features li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+/* Responsive adjustments for roadmap page */
+@media (max-width: 768px) {
+    .milestones {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        padding-left: 2rem;
+    }
+    
+    .progress-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .module-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem;
+    }
+    
+    .version-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+/* Stay Updated Section */
+.stay-updated {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.update-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.update-option {
+    background: var(--tertiary-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.1);
+}
+
+.update-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.update-option h3 {
+    color: var(--accent-blue);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.update-option p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .update-options {
+        grid-template-columns: 1fr;
+    }
+}

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Frequently Asked Questions - The HorizonSec Project FAQ and common questions">
     <title>FAQ - The HorizonSec Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/faq.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,13 +17,13 @@
         <nav class="navbar">
             <div class="container">
                 <div class="logo">
-                    <a href="index.html">
-                        <h1>HorizonSec</h1>
-                        <span class="subtitle">PROJECT</span>
+                    <a href="../index.html">
+                        <img src="../assets/images/logos/horizonSecLogo.png" alt="The HorizonSec Project" />
+                        <span class="logo-text">The HorizonSec Project</span>
                     </a>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="features.html">Features</a></li>
                     <li><a href="getting-started.html">Get Started</a></li>
@@ -43,15 +44,46 @@
         </div>
     </section>
 
-    <!-- FAQ Categories Section -->
-    <section class="faq-categories">
+    <!-- FAQ Table of Contents -->
+    <section class="faq-toc">
         <div class="container">
+            <h2>Quick Navigation</h2>
             <div class="faq-nav">
-                <a href="#general" class="faq-nav-item active">General</a>
-                <a href="#technical" class="faq-nav-item">Technical</a>
-                <a href="#licensing" class="faq-nav-item">Licensing</a>
-                <a href="#contributing" class="faq-nav-item">Contributing</a>
-                <a href="#support" class="faq-nav-item">Support</a>
+                <a href="#general" class="faq-nav-item active">
+                    <span class="nav-icon">🤔</span>
+                    <div class="nav-content">
+                        <h3>General</h3>
+                        <p>Overview and basic information</p>
+                    </div>
+                </a>
+                <a href="#technical" class="faq-nav-item">
+                    <span class="nav-icon">⚙️</span>
+                    <div class="nav-content">
+                        <h3>Technical</h3>
+                        <p>Setup, configuration, and usage</p>
+                    </div>
+                </a>
+                <a href="#licensing" class="faq-nav-item">
+                    <span class="nav-icon">📄</span>
+                    <div class="nav-content">
+                        <h3>Licensing</h3>
+                        <p>License terms and usage rights</p>
+                    </div>
+                </a>
+                <a href="#contributing" class="faq-nav-item">
+                    <span class="nav-icon">🤝</span>
+                    <div class="nav-content">
+                        <h3>Contributing</h3>
+                        <p>How to get involved and contribute</p>
+                    </div>
+                </a>
+                <a href="#support" class="faq-nav-item">
+                    <span class="nav-icon">💬</span>
+                    <div class="nav-content">
+                        <h3>Support</h3>
+                        <p>Getting help and community resources</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -63,7 +95,7 @@
             <div class="faq-grid">
                 <div class="faq-item">
                     <h3>What is The HorizonSec Project?</h3>
-                    <p>The HorizonSec Project is an open-source security framework designed to make application security transparent, actionable, and accessible to builders of all levels. We provide modular security tools that integrate directly into your development workflow, offering static code analysis, infrastructure scanning, endpoint security, and orchestration capabilities.</p>
+                    <p>The HorizonSec Project is an open-source security framework designed to make security transparent, actionable, and accessible to builders of all levels. We provide modular security tools that integrate directly into your development workflow, offering static code analysis, infrastructure scanning, endpoint security, and orchestration capabilities.</p>
                 </div>
 
                 <div class="faq-item">
@@ -90,24 +122,16 @@
                 </div>
 
                 <div class="faq-item">
-                    <h3>What are the four core modules?</h3>
-                    <p><strong>🌍 GAIA Framework:</strong> Security orchestration and management layer that ties everything together.</p>
-                    <p><strong>🏹 ARTEMIS:</strong> Static code analysis for vulnerabilities and security anti-patterns.</p>
-                    <p><strong>🌱 DEMETER:</strong> Infrastructure security scanning for cloud resources and IaC.</p>
-                    <p><strong>💀 HADES:</strong> Endpoint security and runtime monitoring for containers and applications.</p>
-                </div>
-
-                <div class="faq-item">
                     <h3>What programming languages are supported?</h3>
                     <p>ARTEMIS currently supports:</p>
                     <ul>
-                        <li>JavaScript/TypeScript</li>
-                        <li>Python</li>
-                        <li>Java/Kotlin</li>
-                        <li>Go</li>
-                        <li>C#/.NET</li>
-                        <li>PHP</li>
-                        <li>Ruby</li>
+                        <li>JavaScript/TypeScript (coming soon)</li>
+                        <li>Python (coming soon)</li>
+                        <li>Java/Kotlin (coming soon)</li>
+                        <li>Go (coming soon)</li>
+                        <li>C#/.NET (coming soon)</li>
+                        <li>PHP (coming soon)</li>
+                        <li>Ruby (coming soon)</li>
                         <li>Rust (coming soon)</li>
                         <li>Swift (coming soon)</li>
                     </ul>
@@ -132,15 +156,13 @@
                     <p>There are several installation options:</p>
                     <div class="code-block">
                         <pre><code># CLI Installation
-npm install -g @horizonsec/artemis-cli
-pip install horizonsec-demeter
+pip install horizon-demeter
 
 # Docker
 docker run horizonsec/artemis scan .
 
 # Library/SDK
-npm install @horizonsec/artemis
-pip install horizonsec-sdk</code></pre>
+pip install horizon-demeter</code></pre>
                     </div>
                     <p>See our <a href="getting-started.html">Getting Started guide</a> for detailed instructions.</p>
                 </div>
@@ -161,12 +183,12 @@ pip install horizonsec-sdk</code></pre>
 
                 <div class="faq-item">
                     <h3>Do you support my cloud provider?</h3>
-                    <p>DEMETER currently supports:</p>
+                    <p>We will support:</p>
                     <ul>
-                        <li><strong>AWS:</strong> Full support for all major services</li>
-                        <li><strong>Google Cloud:</strong> In development (Q1 2025)</li>
-                        <li><strong>Microsoft Azure:</strong> In development (Q1 2025)</li>
-                        <li><strong>On-premises:</strong> Kubernetes and infrastructure scanning</li>
+                        <li><strong>AWS:</strong> In development (Q1 2026)</li>
+                        <li><strong>Google Cloud:</strong> In planning (TBD)</li>
+                        <li><strong>Microsoft Azure:</strong> In planning (TBD)</li>
+                        <li><strong>On-premises:</strong> In planning (TBD)</li>
                     </ul>
                     <p>Multi-cloud support is a high priority on our roadmap.</p>
                 </div>
@@ -175,9 +197,9 @@ pip install horizonsec-sdk</code></pre>
                     <h3>How fast are the scans?</h3>
                     <p>Performance varies by project size and complexity:</p>
                     <ul>
-                        <li><strong>Small projects (&lt;10k lines):</strong> 10-30 seconds</li>
-                        <li><strong>Medium projects (10k-100k lines):</strong> 30-120 seconds</li>
-                        <li><strong>Large projects (&gt;100k lines):</strong> 2-10 minutes</li>
+                        <li><strong>Small projects (&lt;10k lines):</strong> TBD</li>
+                        <li><strong>Medium projects (10k-100k lines):</strong> TBD</li>
+                        <li><strong>Large projects (&gt;100k lines):</strong> TBD</li>
                     </ul>
                     <p>We use intelligent caching and incremental analysis to speed up subsequent scans.</p>
                 </div>
@@ -203,7 +225,7 @@ pip install horizonsec-sdk</code></pre>
                         <li><strong>JUnit:</strong> Test result format for CI/CD systems</li>
                         <li><strong>Webhooks:</strong> Real-time notifications to your systems</li>
                     </ul>
-                    <p>We also provide APIs and SDKs for deeper integrations.</p>
+                    <p>We also provide SDKs for deeper integrations.</p>
                 </div>
             </div>
         </div>
@@ -258,14 +280,13 @@ pip install horizonsec-sdk</code></pre>
                         <li><strong>Volunteer contributions:</strong> Time and expertise from community members</li>
                         <li><strong>Sponsorships:</strong> Organizations that benefit from and support the project</li>
                         <li><strong>Grants:</strong> Open source and security-focused foundation grants</li>
-                        <li><strong>Community donations:</strong> Optional financial support from users</li>
                     </ul>
                     <p>All funding is transparent and used solely for project development and infrastructure.</p>
                 </div>
 
                 <div class="faq-item">
                     <h3>What about liability and warranty?</h3>
-                    <p>Like most open source software, HorizonSec is provided "as is" without warranty. However:</p>
+                    <p>Like most open source software, HorizonSec is provided "as is" without warranty. We are not responsible for any damages or issues that arise from its use, as it is open-source software, it is your responsibility to evaluate its suitability for your use case. However:</p>
                     <ul>
                         <li>We maintain high code quality standards</li>
                         <li>Extensive testing and community review</li>
@@ -393,13 +414,6 @@ pip install horizonsec-sdk</code></pre>
 
                 <div class="faq-item">
                     <h3>When will the tools be available?</h3>
-                    <p>Development timeline:</p>
-                    <ul>
-                        <li><strong>ARTEMIS & DEMETER:</strong> Alpha release expected Q1 2025</li>
-                        <li><strong>GAIA Framework:</strong> Alpha release expected Q2 2025</li>
-                        <li><strong>HADES Endpoint:</strong> Alpha release expected Q3 2025</li>
-                        <li><strong>Beta releases:</strong> Expected Q4 2025</li>
-                    </ul>
                     <p>See our <a href="roadmap.html">Roadmap</a> for detailed timelines and progress tracking.</p>
                 </div>
 
@@ -421,7 +435,6 @@ pip install horizonsec-sdk</code></pre>
                     <ul>
                         <li><strong>GitHub:</strong> Star repositories for release notifications</li>
                         <li><strong>Discord:</strong> Join for real-time updates and discussions</li>
-                        <li><strong>Social media:</strong> Follow @HorizonSecProject on Twitter</li>
                         <li><strong>Newsletter:</strong> Monthly digest (coming soon)</li>
                         <li><strong>Blog:</strong> Development updates and insights (coming soon)</li>
                     </ul>
@@ -441,21 +454,21 @@ pip install horizonsec-sdk</code></pre>
                     <div class="contact-icon">💬</div>
                     <h3>Join Discord</h3>
                     <p>Get real-time help from our community</p>
-                    <a href="#" class="btn btn-primary">Join Discord</a>
+                    <a href="https://discord.gg/KkKxwxetZt" class="btn btn-primary">Join Discord</a>
                 </div>
                 
                 <div class="contact-option">
                     <div class="contact-icon">📣</div>
                     <h3>GitHub Discussions</h3>
                     <p>Ask questions and get detailed answers</p>
-                    <a href="https://github.com/orgs/HorizonSec/discussions" class="btn btn-secondary" target="_blank">Start Discussion</a>
+                    <a href="https://github.com/orgs/HorizonSec/discussions" class="btn btn-primary" target="_blank">Start Discussion</a>
                 </div>
                 
                 <div class="contact-option">
                     <div class="contact-icon">📧</div>
                     <h3>Email Us</h3>
                     <p>Direct contact for specific inquiries</p>
-                    <a href="mailto:hello@horizonsec.org" class="btn btn-secondary">Send Email</a>
+                    <a href="mailto:hello@horizonsec.org" class="btn btn-primary">Send Email</a>
                 </div>
             </div>
         </div>
@@ -470,34 +483,32 @@ pip install horizonsec-sdk</code></pre>
                     <p>Security where you are: A builder-first approach</p>
                     <p class="tagline"><em>Security doesn't have to be mysterious. Let's build something better—together.</em></p>
                 </div>
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Project</h4>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="roadmap.html">Roadmap</a></li>
-                            <li><a href="community.html">Community</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="https://horizonsec.github.io/horizon-documentation" target="_blank">Documentation</a></li>
-                            <li><a href="getting-started.html">Getting Started</a></li>
-                            <li><a href="https://github.com/HorizonSec" target="_blank">GitHub</a></li>
-                            <li><a href="#" target="_blank">Discord</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Modules</h4>
-                        <ul>
-                            <li><a href="features.html">GAIA Framework</a></li>
-                            <li><a href="features.html">ARTEMIS SAST</a></li>
-                            <li><a href="features.html">DEMETER Infrastructure</a></li>
-                            <li><a href="features.html">HADES Endpoint</a></li>
-                        </ul>
-                    </div>
+                <div class="link-group">
+                    <h4>Project</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://horizonsec.github.io/horizon-documentation" target="_blank">Documentation</a></li>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="https://github.com/HorizonSec" target="_blank">GitHub</a></li>
+                        <li><a href="https://discord.gg/KkKxwxetZt" target="_blank">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Modules</h4>
+                    <ul>
+                        <li><a href="https://github.com/HorizonSec/gaia-framework">GAIA Framework</a></li>
+                        <li><a href="https://github.com/HorizonSec/artemis-static-code">ARTEMIS SAST</a></li>
+                        <li><a href="https://github.com/HorizonSec/demeter-infra-scan">DEMETER Infrastructure</a></li>
+                        <li><a href="https://github.com/HorizonSec/hades-endpoint">HADES Endpoint</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -511,55 +522,15 @@ pip install horizonsec-sdk</code></pre>
         </div>
     </footer>
 
-    <script>
-        // Mobile navigation toggle
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
+    <script src="../assets/js/main.js"></script>
 
-        // FAQ Navigation
-        document.querySelectorAll('.faq-nav-item').forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Remove active class from all nav items
-                document.querySelectorAll('.faq-nav-item').forEach(nav => nav.classList.remove('active'));
-                
-                // Add active class to clicked item
-                this.classList.add('active');
-                
-                // Scroll to target section
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4L4 12H8V20H16V12H20L12 4Z" fill="currentColor"/>
+        </svg>
+    </button>
 
-        // Update active nav item on scroll
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('.faq-section');
-            const navItems = document.querySelectorAll('.faq-nav-item');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href') === '#' + current) {
-                    item.classList.add('active');
-                }
-            });
-        });
-    </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

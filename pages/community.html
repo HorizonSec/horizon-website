@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Community & Contributing - Join The HorizonSec Project community and learn how to contribute">
     <title>Community - The HorizonSec Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/community.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,13 +17,13 @@
         <nav class="navbar">
             <div class="container">
                 <div class="logo">
-                    <a href="index.html">
-                        <h1>HorizonSec</h1>
-                        <span class="subtitle">PROJECT</span>
+                    <a href="../index.html">
+                        <img src="../assets/images/logos/horizonSecLogo.png" alt="The HorizonSec Project" />
+                        <span class="logo-text">The HorizonSec Project</span>
                     </a>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="features.html">Features</a></li>
                     <li><a href="getting-started.html">Get Started</a></li>
@@ -47,7 +48,7 @@
     <section class="community-intro">
         <div class="container">
             <div class="intro-content">
-                <p class="section-intro">The HorizonSec Project is built by the community, for the community. Whether you're a seasoned security expert or just getting started with application security, there's a place for you here.</p>
+                <p class="section-intro">The HorizonSec Project is built by the community, for the community. Whether you're a seasoned security expert or just getting started with security, there's a place for you here.</p>
                 
                 <div class="community-values">
                     <div class="value-item">
@@ -85,22 +86,12 @@
                             <li><strong>#development</strong> - Development discussions and coordination</li>
                             <li><strong>#security-research</strong> - Share findings and research</li>
                             <li><strong>#showcase</strong> - Show off your projects using HorizonSec</li>
+                            <li><strong>#code-change-notifications</strong> - Get notified about code changes in HorizonSec</li>
                             <li><strong>#artemis</strong>, <strong>#demeter</strong>, <strong>#hades</strong>, <strong>#gaia</strong> - Module-specific channels</li>
                         </ul>
                     </div>
                     
-                    <div class="channel-stats">
-                        <div class="stat">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Members</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Support</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#" class="btn btn-primary">Join Discord</a>
+                    <a href="https://discord.gg/KkKxwxetZt" class="btn btn-primary">Join Discord</a>
                 </div>
 
                 <div class="channel-card">
@@ -119,18 +110,7 @@
                         </ul>
                     </div>
                     
-                    <div class="channel-stats">
-                        <div class="stat">
-                            <span class="stat-number">100+</span>
-                            <span class="stat-label">Discussions</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">RFCs</span>
-                        </div>
-                    </div>
-                    
-                    <a href="https://github.com/orgs/HorizonSec/discussions" class="btn btn-secondary" target="_blank">Start Discussion</a>
+                    <a href="https://github.com/orgs/HorizonSec/discussions" class="btn btn-primary" target="_blank">Start Discussion</a>
                 </div>
 
                 <div class="channel-card">
@@ -141,64 +121,17 @@
                     <div class="channel-features">
                         <h4>Main Repositories:</h4>
                         <ul>
-                            <li><strong>artemis</strong> - Static code analysis engine</li>
-                            <li><strong>demeter</strong> - Infrastructure security scanner</li>
-                            <li><strong>gaia</strong> - Security orchestration framework</li>
-                            <li><strong>hades</strong> - Endpoint security monitoring</li>
-                            <li><strong>horizon-docs</strong> - Documentation and guides</li>
+                            <li><strong>horizon-artemis</strong> - Static code analysis engine</li>
+                            <li><strong>horizon-demeter</strong> - Infrastructure security scanner</li>
+                            <li><strong>horizon-gaia</strong> - Security orchestration framework</li>
+                            <li><strong>horizon-hades</strong> - Endpoint security monitoring</li>
+                            <li><strong>horizon-documentation</strong> - Documentation and guides</li>
+                            <li><strong>horizon-core</strong> - Core libraries and utilities</li>
+                            <li><strong>horizon-website</strong> - Community website and resources</li>
                         </ul>
                     </div>
                     
-                    <div class="channel-stats">
-                        <div class="stat">
-                            <span class="stat-number">12</span>
-                            <span class="stat-label">Repos</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">200+</span>
-                            <span class="stat-label">Stars</span>
-                        </div>
-                    </div>
-                    
-                    <a href="https://github.com/HorizonSec" class="btn btn-secondary" target="_blank">View Repositories</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Media Section -->
-    <section class="social-media">
-        <div class="container">
-            <h2>Stay Connected</h2>
-            <p class="section-intro">Follow us on social media for the latest news, updates, and insights</p>
-            
-            <div class="social-grid">
-                <div class="social-item">
-                    <div class="social-icon">🐦</div>
-                    <h3>Twitter</h3>
-                    <p>Daily updates, security insights, and community highlights</p>
-                    <a href="#" class="social-link" target="_blank">@HorizonSecProject</a>
-                </div>
-                
-                <div class="social-item">
-                    <div class="social-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p>Professional updates, company news, and industry insights</p>
-                    <a href="#" class="social-link" target="_blank">HorizonSec Project</a>
-                </div>
-                
-                <div class="social-item">
-                    <div class="social-icon">🐘</div>
-                    <h3>Mastodon</h3>
-                    <p>Decentralized social updates and community engagement</p>
-                    <a href="#" class="social-link" target="_blank">@horizonsec@infosec.exchange</a>
-                </div>
-                
-                <div class="social-item">
-                    <div class="social-icon">📧</div>
-                    <h3>Newsletter</h3>
-                    <p>Monthly digest of project updates, tutorials, and community highlights</p>
-                    <a href="#" class="social-link">Subscribe (Coming Soon)</a>
+                    <a href="https://github.com/HorizonSec" class="btn btn-primary" target="_blank">View Repositories</a>
                 </div>
             </div>
         </div>
@@ -298,7 +231,7 @@
                             <li>Event organization</li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn-secondary">Join Discord</a>
+                    <a href="https://discord.gg/KkKxwxetZt" class="btn btn-secondary">Join Discord</a>
                 </div>
             </div>
         </div>
@@ -383,85 +316,13 @@
         </div>
     </section>
 
-    <!-- Recognition Section -->
-    <section class="recognition">
-        <div class="container">
-            <h2>Contributor Recognition</h2>
-            <p class="section-intro">We believe in recognizing and celebrating our contributors</p>
-            
-            <div class="recognition-types">
-                <div class="recognition-item">
-                    <div class="recognition-icon">🌟</div>
-                    <h3>Contributors Wall</h3>
-                    <p>All contributors are featured on our website and in project documentation</p>
-                </div>
-                
-                <div class="recognition-item">
-                    <div class="recognition-icon">🏆</div>
-                    <h3>Contributor Spotlight</h3>
-                    <p>Monthly spotlight featuring outstanding community contributions</p>
-                </div>
-                
-                <div class="recognition-item">
-                    <div class="recognition-icon">🎁</div>
-                    <h3>Swag & Rewards</h3>
-                    <p>HorizonSec stickers, t-shirts, and swag for active contributors</p>
-                </div>
-                
-                <div class="recognition-item">
-                    <div class="recognition-icon">📢</div>
-                    <h3>Conference Speaking</h3>
-                    <p>Opportunities to represent HorizonSec at conferences and events</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Community Stats Section -->
-    <section class="community-stats">
-        <div class="container">
-            <h2>Community Stats</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Discord Members</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Contributors</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">200+</div>
-                    <div class="stat-label">GitHub Stars</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Pull Requests</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">12</div>
-                    <div class="stat-label">Countries</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Community Support</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Call to Action Section -->
     <section class="community-cta">
         <div class="container">
             <h2>Ready to Join?</h2>
             <p>Become part of the community that's building the future of open-source security</p>
             <div class="cta-buttons">
-                <a href="#" class="btn btn-primary">Join Discord</a>
+                <a href="https://discord.gg/KkKxwxetZt" class="btn btn-primary">Join Discord</a>
                 <a href="https://github.com/HorizonSec" class="btn btn-secondary" target="_blank">Start Contributing</a>
             </div>
         </div>
@@ -476,34 +337,32 @@
                     <p>Security where you are: A builder-first approach</p>
                     <p class="tagline"><em>Security doesn't have to be mysterious. Let's build something better—together.</em></p>
                 </div>
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Project</h4>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="roadmap.html">Roadmap</a></li>
-                            <li><a href="community.html">Community</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="https://horizonsec.github.io/horizon-documentation" target="_blank">Documentation</a></li>
-                            <li><a href="getting-started.html">Getting Started</a></li>
-                            <li><a href="https://github.com/HorizonSec" target="_blank">GitHub</a></li>
-                            <li><a href="#" target="_blank">Discord</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Modules</h4>
-                        <ul>
-                            <li><a href="features.html">GAIA Framework</a></li>
-                            <li><a href="features.html">ARTEMIS SAST</a></li>
-                            <li><a href="features.html">DEMETER Infrastructure</a></li>
-                            <li><a href="features.html">HADES Endpoint</a></li>
-                        </ul>
-                    </div>
+                <div class="link-group">
+                    <h4>Project</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://horizonsec.github.io/horizon-documentation" target="_blank">Documentation</a></li>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="https://github.com/HorizonSec" target="_blank">GitHub</a></li>
+                        <li><a href="https://discord.gg/KkKxwxetZt" target="_blank">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Modules</h4>
+                    <ul>
+                        <li><a href="https://github.com/HorizonSec/gaia-framework">GAIA Framework</a></li>
+                        <li><a href="https://github.com/HorizonSec/artemis-static-code">ARTEMIS SAST</a></li>
+                        <li><a href="https://github.com/HorizonSec/demeter-infra-scan">DEMETER Infrastructure</a></li>
+                        <li><a href="https://github.com/HorizonSec/hades-endpoint">HADES Endpoint</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -517,11 +376,6 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile navigation toggle
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
-    </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

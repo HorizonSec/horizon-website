@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The HorizonSec Project - Open source security tools designed for builders. Transparent, actionable, and accessible application security.">
+    <meta name="description" content="The HorizonSec Project - Open source security tools designed for builders. Transparent, actionable, and accessible security.">
     <title>The HorizonSec Project - Builder-First Security</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,18 +18,18 @@
             <div class="container">
                 <div class="logo">
                     <a href="index.html">
-                        <h1>HorizonSec</h1>
-                        <span class="subtitle">PROJECT</span>
+                        <img src="assets/images/logos/horizonSecLogo.png" alt="The HorizonSec Project" />
+                        <span class="logo-text">The HorizonSec Project</span>
                     </a>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="getting-started.html">Get Started</a></li>
-                    <li><a href="roadmap.html">Roadmap</a></li>
-                    <li><a href="community.html">Community</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/features.html">Features</a></li>
+                    <li><a href="pages/getting-started.html">Get Started</a></li>
+                    <li><a href="pages/roadmap.html">Roadmap</a></li>
+                    <li><a href="pages/community.html">Community</a></li>
+                    <li><a href="pages/faq.html">FAQ</a></li>
                 </ul>
                 <div class="nav-toggle">☰</div>
             </div>
@@ -40,10 +41,10 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Security where you are: <br>A builder-first approach</h1>
-                <p class="hero-subtitle">Open source security tools designed for developers who build, not security teams who gate. Transparent, actionable, and accessible application security.</p>
+                <p class="hero-subtitle">Open source security tools designed for developers who build, not security teams who gate. Transparent, actionable, and accessible security.</p>
                 <div class="hero-buttons">
-                    <a href="getting-started.html" class="btn btn-primary">Get Started</a>
-                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                    <a href="pages/getting-started.html" class="btn btn-primary">Get Started</a>
+                    <a href="pages/about.html" class="btn btn-secondary">Learn More</a>
                 </div>
                 <div class="hero-badges">
                     <span class="badge">🔓 MIT Licensed</span>
@@ -136,21 +137,21 @@
                         <h3>GAIA Framework</h3>
                         <span class="status planning">📋 Planning</span>
                     </div>
-                    <p>The foundation that holds everything together. Security orchestration, policy management, and unified reporting across all your security tools.</p>
+                    <p>The framework that allows simple execution of all modules. Security orchestration, tool management, and unified reporting across all HorizonSec security tools.</p>
                     <ul class="module-features">
                         <li>Centralized security orchestration</li>
-                        <li>Policy-as-code framework</li>
+                        <li>HorizonSec framework</li>
                         <li>Multi-cloud deployment</li>
-                        <li>Unified security dashboard</li>
+                        <li>Unified security reporting</li>
                     </ul>
                 </div>
                 <div class="module-card">
                     <div class="module-header">
                         <div class="module-icon">🌱</div>
-                        <h3>DEMETER Infrastructure Security</h3>
-                        <span class="status in-development">🚧 In Development</span>
+                        <h3>DEMETER Infrastructure Scanning</h3>
+                        <span class="status planning">📋 Planning</span>
                     </div>
-                    <p>Infrastructure security scanning that grows with your cloud footprint. Terraform analysis, cloud resource auditing, and infrastructure-as-code security.</p>
+                    <p>Infrastructure security scanning that grows with your cloud footprint. Terraform analysis, cloud resource auditing, and configuration security.</p>
                     <ul class="module-features">
                         <li>Infrastructure-as-Code analysis</li>
                         <li>Cloud resource security scanning</li>
@@ -164,21 +165,21 @@
                         <h3>HADES Endpoint Security</h3>
                         <span class="status planning">📋 Planning</span>
                     </div>
-                    <p>Runtime protection for applications and containers. Behavioral analysis, threat detection, and security policy enforcement in production environments.</p>
+                    <p>Runtime evaluation for applications and containers. Behavioral analysis, threat testing, and API security.</p>
                     <ul class="module-features">
                         <li>Container and runtime security</li>
                         <li>Behavioral analysis</li>
-                        <li>Threat detection</li>
-                        <li>Security policy enforcement</li>
+                        <li>Threat testing</li>
+                        <li>API security</li>
                     </ul>
                 </div>
                 <div class="module-card">
                     <div class="module-header">
                         <div class="module-icon">🏹</div>
                         <h3>ARTEMIS Static Code Analysis</h3>
-                        <span class="status in-development">🚧 In Development</span>
+                        <span class="status planning">📋 Planning</span>
                     </div>
-                    <p>Application security testing that analyzes your source code for vulnerabilities, security anti-patterns, and compliance violations—before you even commit.</p>
+                    <p>Security testing that analyzes your source code for vulnerabilities, security anti-patterns, and compliance violations—before you even commit.</p>
                     <ul class="module-features">
                         <li>Multi-language support</li>
                         <li>Security-focused SAST engine</li>
@@ -205,8 +206,8 @@
             <div class="mission-content">
                 <div class="mission-text">
                     <h2>Our Mission</h2>
-                    <p class="lead">To make application security transparent, actionable, and accessible to builders of all levels.</p>
-                    <p>We believe that security shouldn't be mysterious, expensive, or require specialized expertise. By building open source tools designed for developers, we're democratizing application security and empowering every builder to ship secure software with confidence.</p>
+                    <p class="lead">To make security transparent, actionable, and accessible to builders of all levels.</p>
+                    <p>We believe that security shouldn't be mysterious, expensive, or require specialized expertise. By building open source tools designed for developers, we're democratizing  security and empowering every builder to ship secure software with confidence.</p>
                 </div>
                 <div class="mission-stats">
                     <div class="stat-item">
@@ -232,42 +233,6 @@
             <h2>Join the Community</h2>
             <p class="section-intro">We're building more than tools—we're building a movement of builders who believe security should be accessible, understandable, and actionable.</p>
             
-            <div class="community-stats">
-                <div class="stat">
-                    <span class="stat-number">2.3k+</span>
-                    <span class="stat-label">GitHub Stars</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">850+</span>
-                    <span class="stat-label">Discord Members</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">45+</span>
-                    <span class="stat-label">Contributors</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">12+</span>
-                    <span class="stat-label">Languages</span>
-                </div>
-            </div>
-            
-            <div class="community-cta">
-                <h3>Ready to get involved?</h3>
-                <p>Whether you're looking to contribute code, share ideas, or just stay updated on our progress</p>
-                <div class="cta-buttons">
-                    <a href="community.html" class="btn btn-primary">Join Community</a>
-                    <a href="getting-started.html" class="btn btn-secondary">Start Building</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>Security doesn't have to be mysterious</h2>
-            <p class="cta-subtitle">Let's build something better—together.</p>
-            
             <div class="cta-grid">
                 <div class="cta-item">
                     <h3>🚀 Start Building</h3>
@@ -277,16 +242,17 @@
                 <div class="cta-item">
                     <h3>📚 Learn More</h3>
                     <p>Dive deeper into our story, principles, and approach to security</p>
-                    <a href="about.html" class="btn btn-secondary">About Us</a>
+                    <a href="about.html" class="btn btn-primary">About Us</a>
                 </div>
                 <div class="cta-item">
                     <h3>👥 Join Us</h3>
-                    <p>Become part of the community building the future of developer security</p>
-                    <a href="community.html" class="btn btn-accent">Join Community</a>
+                    <p>Become part of the community building the future of security</p>
+                    <a href="community.html" class="btn btn-primary">Join Community</a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer>
@@ -297,34 +263,32 @@
                     <p>Security where you are: A builder-first approach</p>
                     <p class="tagline"><em>Security doesn't have to be mysterious. Let's build something better—together.</em></p>
                 </div>
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Project</h4>
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="roadmap.html">Roadmap</a></li>
-                            <li><a href="community.html">Community</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="https://horizonsec.github.io/horizon-documentation" target="_blank">Documentation</a></li>
-                            <li><a href="getting-started.html">Getting Started</a></li>
-                            <li><a href="https://github.com/HorizonSec" target="_blank">GitHub</a></li>
-                            <li><a href="#" target="_blank">Discord</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Modules</h4>
-                        <ul>
-                            <li><a href="features.html">GAIA Framework</a></li>
-                            <li><a href="features.html">ARTEMIS SAST</a></li>
-                            <li><a href="features.html">DEMETER Infrastructure</a></li>
-                            <li><a href="features.html">HADES Endpoint</a></li>
-                        </ul>
-                    </div>
+                <div class="link-group">
+                    <h4>Project</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://horizonsec.github.io/horizon-documentation" target="_blank">Documentation</a></li>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="https://github.com/HorizonSec" target="_blank">GitHub</a></li>
+                        <li><a href="https://discord.gg/KkKxwxetZt" target="_blank">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Modules</h4>
+                    <ul>
+                        <li><a href="https://github.com/HorizonSec/gaia-framework">GAIA Framework</a></li>
+                        <li><a href="https://github.com/HorizonSec/artemis-static-code">ARTEMIS SAST</a></li>
+                        <li><a href="https://github.com/HorizonSec/demeter-infra-scan">DEMETER Infrastructure</a></li>
+                        <li><a href="https://github.com/HorizonSec/hades-endpoint">HADES Endpoint</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -338,11 +302,6 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile navigation toggle
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
