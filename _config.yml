@@ -1,0 +1,12 @@
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+
+include:
+  - README.md
+  - index.html
+  - styles.css
+
+exclude:
+  - mds/
+  - styles-old.css

@@ -1,22 +1,35 @@
-# HorizonSec Website
+# The HorizonSec Project Website
 
-Official website for HorizonSec.org - A professional cybersecurity solutions provider.
+Official website for The HorizonSec Project - Open-source, modular security framework for modern application development.
 
 ## About
 
-This is a static website hosted on GitHub Pages that mirrors to the HorizonSec.org domain via Namecheap DNS configuration.
+This is the official website showcasing The HorizonSec Project - a comprehensive open-source security framework designed to make application security transparent, actionable, and accessible to builders of all levels.
 
-## Features
+## About The HorizonSec Project
 
-- **Responsive Design**: Mobile-friendly layout that works on all devices
-- **Modern UI**: Professional gradient color scheme with blue/dark theme
+The HorizonSec Project provides modular security tools that integrate directly into your development workflow:
+
+- **🌍 GAIA Framework**: Security orchestration and management
+- **🌱 DEMETER**: Infrastructure security scanning
+- **💀 HADES**: Endpoint security and runtime monitoring  
+- **🏹 ARTEMIS**: Static code analysis
+
+## Website Features
+
+- **Comprehensive Content**: Complete information about all HorizonSec modules, features, and roadmap
+- **Modern Design**: Dark theme with cybersecurity-focused color palette (cyan/blue accents)
+- **Responsive Layout**: Mobile-first design that works on all devices
 - **Complete Sections**:
-  - Navigation header with smooth scrolling
-  - Hero section with call-to-action
-  - About section with company statistics
-  - Services showcase (6 key offerings)
-  - Contact information and form
-  - Professional footer
+  - Hero section with project overview
+  - Problem/solution narrative
+  - Framework modules showcase
+  - Features and capabilities
+  - Getting started guide
+  - Project roadmap
+  - Community information
+  - FAQ section
+- **Automated Deployment**: GitHub Actions workflow for continuous deployment
 
 ## Local Development
 

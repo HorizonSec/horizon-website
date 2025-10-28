@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Getting Started with The HorizonSec Project - Installation guides and tutorials">
+    <title>Getting Started - The HorizonSec Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>HorizonSec</h1>
+                        <span class="subtitle">PROJECT</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="getting-started.html" class="active">Get Started</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="nav-toggle">☰</div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Getting Started Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Getting Started</h1>
+            <p class="hero-subtitle">Get up and running with HorizonSec security tools in minutes</p>
+        </div>
+    </section>
+
+    <!-- Quick Start Section -->
+    <section class="quick-start-section">
+        <div class="container">
+            <h2>Quick Start</h2>
+            <p class="section-intro">The fastest way to try HorizonSec is to run ARTEMIS (Static Code Analysis) on your project:</p>
+            
+            <div class="quick-start">
+                <div class="quick-start-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Install ARTEMIS CLI</h3>
+                            <div class="code-block">
+                                <pre><code># Using npm
+npm install -g @horizonsec/artemis-cli
+
+# Using pip
+pip install horizonsec-artemis</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Run a Security Scan</h3>
+                            <div class="code-block">
+                                <pre><code># Navigate to your project directory
+cd your-project
+
+# Run a comprehensive security scan
+artemis scan .</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>View Results</h3>
+                            <div class="code-block">
+                                <pre><code># Generate a detailed report
+artemis report
+
+# Or view results in your browser
+artemis report --web</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-start-demo">
+                    <h3>What You'll See</h3>
+                    <div class="demo-output">
+                        <pre><code>🔍 HorizonSec ARTEMIS Security Scanner
+📁 Scanning: ./src (JavaScript, TypeScript)
+⏱️  Completed in 2.3s
+
+📊 Results Summary:
+   🔴 Critical: 0
+   🟠 High: 2  
+   🟡 Medium: 5
+   🔵 Low: 12
+   ℹ️  Info: 3
+
+🔍 Found 7 security issues requiring attention
+📋 View detailed report: artemis report --web</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prerequisites Section -->
+    <section class="prerequisites">
+        <div class="container">
+            <h2>Prerequisites</h2>
+            <div class="prereq-grid">
+                <div class="prereq-item">
+                    <div class="prereq-icon">📝</div>
+                    <h3>Git</h3>
+                    <p>Version control for cloning repositories and managing your codebase</p>
+                    <div class="version-info">Version 2.0+</div>
+                </div>
+                <div class="prereq-item">
+                    <div class="prereq-icon">🟢</div>
+                    <h3>Node.js</h3>
+                    <p>For ARTEMIS and GAIA modules</p>
+                    <div class="version-info">Version 16+</div>
+                </div>
+                <div class="prereq-item">
+                    <div class="prereq-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>For DEMETER and HADES modules</p>
+                    <div class="version-info">Version 3.8+</div>
+                </div>
+                <div class="prereq-item">
+                    <div class="prereq-icon">🐳</div>
+                    <h3>Docker</h3>
+                    <p>Optional, for containerized deployments</p>
+                    <div class="version-info">Version 20.10+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Options Section -->
+    <section class="installation-options">
+        <div class="container">
+            <h2>Installation Options</h2>
+            <div class="install-grid">
+                <div class="install-option">
+                    <div class="option-header">
+                        <div class="option-icon">🚀</div>
+                        <h3>CLI Installation</h3>
+                        <p class="option-subtitle">Recommended for getting started</p>
+                    </div>
+                    <p>Standalone command-line tools for each module. Perfect for local development and CI/CD integration.</p>
+                    
+                    <div class="install-tabs">
+                        <div class="module-install">
+                            <h4>ARTEMIS (Static Code Analysis)</h4>
+                            <div class="install-commands">
+                                <code>npm install -g @horizonsec/artemis-cli</code>
+                                <code>pip install horizonsec-artemis</code>
+                            </div>
+                        </div>
+                        
+                        <div class="module-install">
+                            <h4>DEMETER (Infrastructure Scanning)</h4>
+                            <div class="install-commands">
+                                <code>pip install horizonsec-demeter</code>
+                                <code>brew install horizonsec/tap/demeter</code>
+                            </div>
+                        </div>
+                        
+                        <div class="module-install">
+                            <h4>GAIA (Framework Orchestration)</h4>
+                            <div class="install-commands">
+                                <code>npm install -g @horizonsec/gaia-cli</code>
+                                <code>docker pull horizonsec/gaia</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="install-option">
+                    <div class="option-header">
+                        <div class="option-icon">🐳</div>
+                        <h3>Docker</h3>
+                        <p class="option-subtitle">Consistent environments</p>
+                    </div>
+                    <p>Containerized deployment for consistent environments across development, CI/CD, and production.</p>
+                    
+                    <div class="docker-examples">
+                        <h4>Quick Docker Usage</h4>
+                        <div class="code-block">
+                            <pre><code># Run ARTEMIS scan
+docker run --rm -v $(pwd):/workspace horizonsec/artemis scan /workspace
+
+# Run DEMETER infrastructure scan
+docker run --rm -v ~/.aws:/root/.aws horizonsec/demeter scan --cloud aws
+
+# Run full GAIA orchestration
+docker run -d -p 8080:8080 horizonsec/gaia</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="docker-compose-example">
+                        <h4>Docker Compose</h4>
+                        <div class="code-block">
+                            <pre><code>version: '3.8'
+services:
+  gaia:
+    image: horizonsec/gaia:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - HORIZONSEC_API_KEY=${API_KEY}
+  artemis:
+    image: horizonsec/artemis:latest
+    volumes:
+      - ./src:/workspace
+    command: scan /workspace</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="install-option">
+                    <div class="option-header">
+                        <div class="option-icon">⚙️</div>
+                        <h3>CI/CD Integration</h3>
+                        <p class="option-subtitle">Native pipeline integration</p>
+                    </div>
+                    <p>Pre-built actions and configurations for popular CI/CD platforms.</p>
+                    
+                    <div class="cicd-examples">
+                        <h4>GitHub Actions</h4>
+                        <div class="code-block">
+                            <pre><code>- name: HorizonSec Security Scan
+  uses: horizonsec/artemis-action@v1
+  with:
+    scan-path: './src'
+    fail-on-high: true</code></pre>
+                        </div>
+                        
+                        <h4>GitLab CI</h4>
+                        <div class="code-block">
+                            <pre><code>security_scan:
+  image: horizonsec/artemis:latest
+  script:
+    - artemis scan ./src
+  artifacts:
+    reports:
+      security: security-report.json</code></pre>
+                        </div>
+                        
+                        <h4>Jenkins</h4>
+                        <div class="code-block">
+                            <pre><code>pipeline {
+  agent any
+  stages {
+    stage('Security Scan') {
+      steps {
+        sh 'docker run --rm -v $PWD:/workspace horizonsec/artemis scan /workspace'
+      }
+    }
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="install-option">
+                    <div class="option-header">
+                        <div class="option-icon">📚</div>
+                        <h3>Library/SDK</h3>
+                        <p class="option-subtitle">Programmatic access</p>
+                    </div>
+                    <p>Import as libraries in your applications for custom integrations and programmatic access.</p>
+                    
+                    <div class="sdk-examples">
+                        <h4>JavaScript/Node.js</h4>
+                        <div class="code-block">
+                            <pre><code>const { Artemis } = require('@horizonsec/artemis');
+
+const scanner = new Artemis({
+  apiKey: process.env.HORIZONSEC_API_KEY
+});
+
+const results = await scanner.scan('./src');</code></pre>
+                        </div>
+                        
+                        <h4>Python</h4>
+                        <div class="code-block">
+                            <pre><code>from horizonsec import Artemis
+
+scanner = Artemis(api_key=os.getenv('HORIZONSEC_API_KEY'))
+results = scanner.scan('./src')</code></pre>
+                        </div>
+                        
+                        <h4>Go</h4>
+                        <div class="code-block">
+                            <pre><code>import "github.com/horizonsec/go-sdk/artemis"
+
+client := artemis.NewClient(apiKey)
+results, err := client.Scan("./src")</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configuration Section -->
+    <section class="configuration">
+        <div class="container">
+            <h2>Configuration</h2>
+            <div class="config-content">
+                <div class="config-section">
+                    <h3>Configuration File</h3>
+                    <p>Create a <code>.horizonsec.yml</code> file in your project root to customize behavior:</p>
+                    <div class="code-block">
+                        <pre><code># .horizonsec.yml
+version: 1
+
+# Global settings
+api_key: ${HORIZONSEC_API_KEY}
+output_format: json
+fail_on_high: true
+
+# Module-specific configuration
+artemis:
+  languages: [javascript, typescript, python]
+  exclude_paths:
+    - node_modules/
+    - .git/
+    - dist/
+  custom_rules:
+    - rules/security-patterns.yml
+
+demeter:
+  cloud_providers: [aws, gcp]
+  regions: [us-east-1, us-west-2]
+  compliance_frameworks: [cis, soc2]
+
+gaia:
+  dashboard_port: 8080
+  webhook_url: https://your-app.com/webhooks/security</code></pre>
+                    </div>
+                </div>
+                
+                <div class="config-section">
+                    <h3>Environment Variables</h3>
+                    <div class="env-vars">
+                        <div class="env-var">
+                            <code>HORIZONSEC_API_KEY</code>
+                            <p>Your HorizonSec API key (optional for CLI usage)</p>
+                        </div>
+                        <div class="env-var">
+                            <code>HORIZONSEC_CONFIG_PATH</code>
+                            <p>Path to custom configuration file</p>
+                        </div>
+                        <div class="env-var">
+                            <code>HORIZONSEC_OUTPUT_FORMAT</code>
+                            <p>Default output format: json, yaml, table</p>
+                        </div>
+                        <div class="env-var">
+                            <code>HORIZONSEC_DEBUG</code>
+                            <p>Enable debug logging: true, false</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section class="examples">
+        <div class="container">
+            <h2>Common Usage Examples</h2>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <h3>🔍 Basic Security Scan</h3>
+                    <div class="code-block">
+                        <pre><code># Scan current directory
+artemis scan .
+
+# Scan specific path
+artemis scan ./src
+
+# Scan with specific language
+artemis scan ./src --language javascript</code></pre>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <h3>🚫 Pre-commit Hook</h3>
+                    <div class="code-block">
+                        <pre><code># .git/hooks/pre-commit
+#!/bin/bash
+echo "Running security scan..."
+artemis scan --staged-only --fail-fast
+
+if [ $? -ne 0 ]; then
+    echo "❌ Security issues found"
+    exit 1
+fi</code></pre>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <h3>☁️ Infrastructure Scan</h3>
+                    <div class="code-block">
+                        <pre><code># Scan Terraform files
+demeter scan --type terraform ./infrastructure
+
+# Scan live AWS resources
+demeter scan --cloud aws --region us-east-1
+
+# Scan Kubernetes manifests
+demeter scan --type kubernetes ./k8s</code></pre>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <h3>📊 Custom Reporting</h3>
+                    <div class="code-block">
+                        <pre><code># Generate HTML report
+artemis report --format html --output security-report.html
+
+# Export to SARIF format
+artemis report --format sarif --output results.sarif
+
+# Send to webhook
+artemis report --webhook https://your-app.com/security</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section class="next-steps">
+        <div class="container">
+            <h2>Next Steps</h2>
+            <div class="next-steps-content">
+                <p class="section-intro">Now that you have HorizonSec installed, here's what to explore next:</p>
+                
+                <div class="next-steps-grid">
+                    <div class="next-step-card">
+                        <div class="step-icon">📖</div>
+                        <h3>Read the Documentation</h3>
+                        <p>Comprehensive guides, API references, and best practices for all HorizonSec modules.</p>
+                        <a href="https://horizonsec.github.io/horizon-documentation" class="btn btn-secondary" target="_blank">View Docs</a>
+                    </div>
+
+                    <div class="next-step-card">
+                        <div class="step-icon">💬</div>
+                        <h3>Join the Community</h3>
+                        <p>Connect with other builders, get support, and contribute to the project.</p>
+                        <a href="community.html" class="btn btn-secondary">Join Community</a>
+                    </div>
+
+                    <div class="next-step-card">
+                        <div class="step-icon">⭐</div>
+                        <h3>Star on GitHub</h3>
+                        <p>Follow development progress, report issues, and contribute to the codebase.</p>
+                        <a href="https://github.com/HorizonSec" class="btn btn-secondary" target="_blank">GitHub</a>
+                    </div>
+
+                    <div class="next-step-card">
+                        <div class="step-icon">🗺️</div>
+                        <h3>View the Roadmap</h3>
+                        <p>See what's coming next and how you can help shape the future of HorizonSec.</p>
+                        <a href="roadmap.html" class="btn btn-secondary">View Roadmap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support">
+        <div class="container">
+            <h2>Need Help?</h2>
+            <div class="support-options">
+                <div class="support-option">
+                    <h3>📖 Documentation</h3>
+                    <p>Detailed guides and API references</p>
+                    <a href="https://horizonsec.github.io/horizon-documentation" target="_blank">Read Docs</a>
+                </div>
+                <div class="support-option">
+                    <h3>💬 Discord Community</h3>
+                    <p>Real-time help from the community</p>
+                    <a href="#" target="_blank">Join Discord</a>
+                </div>
+                <div class="support-option">
+                    <h3>🐛 GitHub Issues</h3>
+                    <p>Report bugs and request features</p>
+                    <a href="https://github.com/HorizonSec" target="_blank">Open Issue</a>
+                </div>
+                <div class="support-option">
+                    <h3>❓ FAQ</h3>
+                    <p>Common questions and answers</p>
+                    <a href="faq.html">View FAQ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The HorizonSec Project</h3>
+                    <p>Security where you are: A builder-first approach</p>
+                    <p class="tagline"><em>Security doesn't have to be mysterious. Let's build something better—together.</em></p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Project</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="roadmap.html">Roadmap</a></li>
+                            <li><a href="community.html">Community</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="https://horizonsec.github.io/horizon-documentation" target="_blank">Documentation</a></li>
+                            <li><a href="getting-started.html">Getting Started</a></li>
+                            <li><a href="https://github.com/HorizonSec" target="_blank">GitHub</a></li>
+                            <li><a href="#" target="_blank">Discord</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Modules</h4>
+                        <ul>
+                            <li><a href="features.html">GAIA Framework</a></li>
+                            <li><a href="features.html">ARTEMIS SAST</a></li>
+                            <li><a href="features.html">DEMETER Infrastructure</a></li>
+                            <li><a href="features.html">HADES Endpoint</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The HorizonSec Project. Released under the MIT License.</p>
+                <div class="footer-badges">
+                    <span class="badge">🔓 MIT Licensed</span>
+                    <span class="badge">🌟 Community Driven</span>
+                    <span class="badge">🚀 Builder First</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

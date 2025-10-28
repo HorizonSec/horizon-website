@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions - The HorizonSec Project FAQ and common questions">
+    <title>FAQ - The HorizonSec Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>HorizonSec</h1>
+                        <span class="subtitle">PROJECT</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="getting-started.html">Get Started</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                </ul>
+                <div class="nav-toggle">☰</div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FAQ Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p class="hero-subtitle">Find answers to common questions about The HorizonSec Project</p>
+        </div>
+    </section>
+
+    <!-- FAQ Categories Section -->
+    <section class="faq-categories">
+        <div class="container">
+            <div class="faq-nav">
+                <a href="#general" class="faq-nav-item active">General</a>
+                <a href="#technical" class="faq-nav-item">Technical</a>
+                <a href="#licensing" class="faq-nav-item">Licensing</a>
+                <a href="#contributing" class="faq-nav-item">Contributing</a>
+                <a href="#support" class="faq-nav-item">Support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Questions Section -->
+    <section id="general" class="faq-section">
+        <div class="container">
+            <h2>General Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What is The HorizonSec Project?</h3>
+                    <p>The HorizonSec Project is an open-source security framework designed to make application security transparent, actionable, and accessible to builders of all levels. We provide modular security tools that integrate directly into your development workflow, offering static code analysis, infrastructure scanning, endpoint security, and orchestration capabilities.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Who is HorizonSec for?</h3>
+                    <p>HorizonSec is built for <strong>everyone who builds software</strong>:</p>
+                    <ul>
+                        <li>Solo developers building side projects</li>
+                        <li>Small teams at startups</li>
+                        <li>Engineering teams at mid-size companies</li>
+                        <li>Enterprise development organizations</li>
+                        <li>Security teams looking for open-source alternatives</li>
+                        <li>DevOps engineers embedding security in CI/CD</li>
+                    </ul>
+                    <p>If you write code or manage infrastructure, HorizonSec is for you.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How is HorizonSec different from other security tools?</h3>
+                    <p><strong>1. Truly Open Source:</strong> No bait-and-switch. Everything is MIT licensed with full source code available.</p>
+                    <p><strong>2. Modular Architecture:</strong> Use individual modules independently or combine them. Start small, scale up.</p>
+                    <p><strong>3. Builder-First Design:</strong> Designed for developers, not security specialists. Clear, actionable feedback instead of cryptic reports.</p>
+                    <p><strong>4. Multi-Cloud Native:</strong> Works across AWS, GCP, Azure, and on-premises without vendor lock-in.</p>
+                    <p><strong>5. Community-Driven:</strong> Built by the community, for the community, with transparent development.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What are the four core modules?</h3>
+                    <p><strong>🌍 GAIA Framework:</strong> Security orchestration and management layer that ties everything together.</p>
+                    <p><strong>🏹 ARTEMIS:</strong> Static code analysis for vulnerabilities and security anti-patterns.</p>
+                    <p><strong>🌱 DEMETER:</strong> Infrastructure security scanning for cloud resources and IaC.</p>
+                    <p><strong>💀 HADES:</strong> Endpoint security and runtime monitoring for containers and applications.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What programming languages are supported?</h3>
+                    <p>ARTEMIS currently supports:</p>
+                    <ul>
+                        <li>JavaScript/TypeScript</li>
+                        <li>Python</li>
+                        <li>Java/Kotlin</li>
+                        <li>Go</li>
+                        <li>C#/.NET</li>
+                        <li>PHP</li>
+                        <li>Ruby</li>
+                        <li>Rust (coming soon)</li>
+                        <li>Swift (coming soon)</li>
+                    </ul>
+                    <p>We're continuously adding support for more languages based on community demand.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Where can I see the project roadmap?</h3>
+                    <p>Our detailed roadmap is available on our <a href="roadmap.html">Roadmap page</a>. We also maintain public project boards on GitHub where you can track development progress in real-time. All planning discussions happen in our GitHub Discussions forum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Questions Section -->
+    <section id="technical" class="faq-section">
+        <div class="container">
+            <h2>Technical Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I install HorizonSec?</h3>
+                    <p>There are several installation options:</p>
+                    <div class="code-block">
+                        <pre><code># CLI Installation
+npm install -g @horizonsec/artemis-cli
+pip install horizonsec-demeter
+
+# Docker
+docker run horizonsec/artemis scan .
+
+# Library/SDK
+npm install @horizonsec/artemis
+pip install horizonsec-sdk</code></pre>
+                    </div>
+                    <p>See our <a href="getting-started.html">Getting Started guide</a> for detailed instructions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you support my CI/CD platform?</h3>
+                    <p>Yes! We provide native integrations for:</p>
+                    <ul>
+                        <li>GitHub Actions</li>
+                        <li>GitLab CI/CD</li>
+                        <li>Jenkins</li>
+                        <li>CircleCI</li>
+                        <li>Azure DevOps</li>
+                        <li>Bitbucket Pipelines</li>
+                    </ul>
+                    <p>For other platforms, you can use our CLI tools or Docker containers.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you support my cloud provider?</h3>
+                    <p>DEMETER currently supports:</p>
+                    <ul>
+                        <li><strong>AWS:</strong> Full support for all major services</li>
+                        <li><strong>Google Cloud:</strong> In development (Q1 2025)</li>
+                        <li><strong>Microsoft Azure:</strong> In development (Q1 2025)</li>
+                        <li><strong>On-premises:</strong> Kubernetes and infrastructure scanning</li>
+                    </ul>
+                    <p>Multi-cloud support is a high priority on our roadmap.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How fast are the scans?</h3>
+                    <p>Performance varies by project size and complexity:</p>
+                    <ul>
+                        <li><strong>Small projects (&lt;10k lines):</strong> 10-30 seconds</li>
+                        <li><strong>Medium projects (10k-100k lines):</strong> 30-120 seconds</li>
+                        <li><strong>Large projects (&gt;100k lines):</strong> 2-10 minutes</li>
+                    </ul>
+                    <p>We use intelligent caching and incremental analysis to speed up subsequent scans.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I customize the security rules?</h3>
+                    <p>Yes! Each module supports custom configuration:</p>
+                    <ul>
+                        <li><strong>Custom rules:</strong> Define organization-specific security patterns</li>
+                        <li><strong>Severity levels:</strong> Adjust finding severity based on your risk tolerance</li>
+                        <li><strong>Exclusions:</strong> Ignore false positives or accepted risks</li>
+                        <li><strong>Policy enforcement:</strong> Set quality gates and failure thresholds</li>
+                    </ul>
+                    <p>Configuration is done through <code>.horizonsec.yml</code> files or CLI arguments.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I integrate with my existing security tools?</h3>
+                    <p>HorizonSec supports standard output formats:</p>
+                    <ul>
+                        <li><strong>SARIF:</strong> Static Analysis Results Interchange Format</li>
+                        <li><strong>JSON/XML:</strong> Machine-readable formats for custom integrations</li>
+                        <li><strong>JUnit:</strong> Test result format for CI/CD systems</li>
+                        <li><strong>Webhooks:</strong> Real-time notifications to your systems</li>
+                    </ul>
+                    <p>We also provide APIs and SDKs for deeper integrations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Licensing Questions Section -->
+    <section id="licensing" class="faq-section">
+        <div class="container">
+            <h2>Licensing & Legal</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Is HorizonSec really free?</h3>
+                    <p><strong>Yes, completely free.</strong> HorizonSec is licensed under the MIT License, which means:</p>
+                    <ul>
+                        <li>Free to use for any purpose (personal, commercial, enterprise)</li>
+                        <li>Free to modify and distribute</li>
+                        <li>No hidden costs or premium tiers</li>
+                        <li>No feature gating or "enterprise-only" capabilities</li>
+                        <li>No required registration or license keys</li>
+                    </ul>
+                    <p>We believe security should be accessible to everyone.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I use HorizonSec in commercial projects?</h3>
+                    <p>Absolutely! The MIT License explicitly allows commercial use. You can:</p>
+                    <ul>
+                        <li>Use HorizonSec in commercial software development</li>
+                        <li>Integrate it into proprietary products and services</li>
+                        <li>Modify the source code for your needs</li>
+                        <li>Distribute modified versions (while maintaining attribution)</li>
+                    </ul>
+                    <p>The only requirement is to include the original copyright notice and license.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you plan to introduce paid features?</h3>
+                    <p><strong>No.</strong> We're committed to keeping all HorizonSec functionality free and open source. Our philosophy is:</p>
+                    <ul>
+                        <li>No "community edition" with limited features</li>
+                        <li>No bait-and-switch to paid versions</li>
+                        <li>No hosted services with subscription models</li>
+                        <li>No enterprise licensing requirements</li>
+                    </ul>
+                    <p>The project is supported by the community and maintained by volunteers and sponsors.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How is the project funded?</h3>
+                    <p>The HorizonSec Project is funded through:</p>
+                    <ul>
+                        <li><strong>Volunteer contributions:</strong> Time and expertise from community members</li>
+                        <li><strong>Sponsorships:</strong> Organizations that benefit from and support the project</li>
+                        <li><strong>Grants:</strong> Open source and security-focused foundation grants</li>
+                        <li><strong>Community donations:</strong> Optional financial support from users</li>
+                    </ul>
+                    <p>All funding is transparent and used solely for project development and infrastructure.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What about liability and warranty?</h3>
+                    <p>Like most open source software, HorizonSec is provided "as is" without warranty. However:</p>
+                    <ul>
+                        <li>We maintain high code quality standards</li>
+                        <li>Extensive testing and community review</li>
+                        <li>Responsive issue resolution</li>
+                        <li>Transparent development process</li>
+                    </ul>
+                    <p>For enterprise deployments, consider professional support or consulting services from community experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributing Questions Section -->
+    <section id="contributing" class="faq-section">
+        <div class="container">
+            <h2>Contributing</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How can I contribute to HorizonSec?</h3>
+                    <p>There are many ways to contribute, regardless of your technical background:</p>
+                    <ul>
+                        <li><strong>Code:</strong> Bug fixes, features, performance improvements</li>
+                        <li><strong>Documentation:</strong> Guides, tutorials, API docs, examples</li>
+                        <li><strong>Testing:</strong> Bug reports, user feedback, QA</li>
+                        <li><strong>Ideas:</strong> Feature requests, RFCs, research</li>
+                        <li><strong>Design:</strong> UI/UX, graphics, branding</li>
+                        <li><strong>Community:</strong> Support, mentoring, advocacy</li>
+                    </ul>
+                    <p>Visit our <a href="community.html">Community page</a> to get started.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>I'm new to open source. Can I still contribute?</h3>
+                    <p><strong>Absolutely!</strong> We welcome contributors of all experience levels. We provide:</p>
+                    <ul>
+                        <li><strong>Good first issues:</strong> Beginner-friendly tasks labeled for new contributors</li>
+                        <li><strong>Mentorship:</strong> Experienced contributors to guide you through your first PRs</li>
+                        <li><strong>Documentation:</strong> Comprehensive guides for getting started</li>
+                        <li><strong>Supportive community:</strong> Helpful and patient community members</li>
+                    </ul>
+                    <p>Everyone started somewhere, and we're here to help you learn.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What's the development workflow?</h3>
+                    <p>Our development process is designed to be transparent and inclusive:</p>
+                    <ol>
+                        <li><strong>Discussion:</strong> Ideas start in GitHub Discussions or Discord</li>
+                        <li><strong>Issues:</strong> Concrete tasks are tracked as GitHub issues</li>
+                        <li><strong>Development:</strong> Contributors work on branches and submit PRs</li>
+                        <li><strong>Review:</strong> Maintainers and community review changes</li>
+                        <li><strong>Testing:</strong> Automated tests and manual verification</li>
+                        <li><strong>Merge:</strong> Approved changes are merged to main branches</li>
+                    </ol>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How are decisions made?</h3>
+                    <p>We use a community-driven decision-making process:</p>
+                    <ul>
+                        <li><strong>RFCs:</strong> Major changes go through Request for Comments process</li>
+                        <li><strong>Community input:</strong> All stakeholders can participate in discussions</li>
+                        <li><strong>Consensus building:</strong> We seek agreement rather than voting</li>
+                        <li><strong>Maintainer guidance:</strong> Core maintainers provide technical direction</li>
+                        <li><strong>Transparency:</strong> All decisions are documented publicly</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I become a maintainer?</h3>
+                    <p>Maintainership is earned through consistent, valuable contributions:</p>
+                    <ul>
+                        <li><strong>Regular contributions:</strong> Sustained involvement over time</li>
+                        <li><strong>Technical expertise:</strong> Deep understanding of the codebase</li>
+                        <li><strong>Community involvement:</strong> Helping others and building relationships</li>
+                        <li><strong>Leadership:</strong> Taking initiative on important issues</li>
+                        <li><strong>Alignment:</strong> Commitment to project values and goals</li>
+                    </ul>
+                    <p>Current maintainers nominate new maintainers based on these criteria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Questions Section -->
+    <section id="support" class="faq-section">
+        <div class="container">
+            <h2>Support & Help</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Where can I get help?</h3>
+                    <p>We offer several support channels:</p>
+                    <ul>
+                        <li><strong>Discord:</strong> Real-time help from the community (#help channel)</li>
+                        <li><strong>GitHub Discussions:</strong> Q&A and longer-form help requests</li>
+                        <li><strong>Documentation:</strong> Comprehensive guides and troubleshooting</li>
+                        <li><strong>GitHub Issues:</strong> Bug reports and feature requests</li>
+                    </ul>
+                    <p>Community support is free and provided by volunteers.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is there professional support available?</h3>
+                    <p>While the core project doesn't offer commercial support, several options exist:</p>
+                    <ul>
+                        <li><strong>Community experts:</strong> Contributors who offer consulting services</li>
+                        <li><strong>System integrators:</strong> Companies specializing in security tool implementation</li>
+                        <li><strong>Managed services:</strong> Third parties offering hosted HorizonSec solutions</li>
+                    </ul>
+                    <p>We maintain a list of recommended service providers in our documentation.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I report a bug?</h3>
+                    <p>To report a bug:</p>
+                    <ol>
+                        <li>Check existing issues to avoid duplicates</li>
+                        <li>Use the appropriate repository (artemis, demeter, etc.)</li>
+                        <li>Provide a clear description and reproduction steps</li>
+                        <li>Include relevant logs, configuration, and environment details</li>
+                        <li>Use the bug report template for consistency</li>
+                    </ol>
+                    <p>Security vulnerabilities should be reported privately to security@horizonsec.org</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>When will the tools be available?</h3>
+                    <p>Development timeline:</p>
+                    <ul>
+                        <li><strong>ARTEMIS & DEMETER:</strong> Alpha release expected Q1 2025</li>
+                        <li><strong>GAIA Framework:</strong> Alpha release expected Q2 2025</li>
+                        <li><strong>HADES Endpoint:</strong> Alpha release expected Q3 2025</li>
+                        <li><strong>Beta releases:</strong> Expected Q4 2025</li>
+                    </ul>
+                    <p>See our <a href="roadmap.html">Roadmap</a> for detailed timelines and progress tracking.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I request a feature?</h3>
+                    <p>Yes! We welcome feature requests through:</p>
+                    <ul>
+                        <li><strong>GitHub Discussions:</strong> Discuss ideas and gather community input</li>
+                        <li><strong>GitHub Issues:</strong> Formal feature requests with detailed requirements</li>
+                        <li><strong>Discord:</strong> Informal discussion and brainstorming</li>
+                        <li><strong>RFCs:</strong> Major features requiring design documentation</li>
+                    </ul>
+                    <p>Community voting and feedback helps us prioritize development efforts.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I stay updated on the project?</h3>
+                    <p>Stay informed through:</p>
+                    <ul>
+                        <li><strong>GitHub:</strong> Star repositories for release notifications</li>
+                        <li><strong>Discord:</strong> Join for real-time updates and discussions</li>
+                        <li><strong>Social media:</strong> Follow @HorizonSecProject on Twitter</li>
+                        <li><strong>Newsletter:</strong> Monthly digest (coming soon)</li>
+                        <li><strong>Blog:</strong> Development updates and insights (coming soon)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions Section -->
+    <section class="still-questions">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p class="section-intro">Can't find what you're looking for? We're here to help!</p>
+            
+            <div class="contact-options">
+                <div class="contact-option">
+                    <div class="contact-icon">💬</div>
+                    <h3>Join Discord</h3>
+                    <p>Get real-time help from our community</p>
+                    <a href="#" class="btn btn-primary">Join Discord</a>
+                </div>
+                
+                <div class="contact-option">
+                    <div class="contact-icon">📣</div>
+                    <h3>GitHub Discussions</h3>
+                    <p>Ask questions and get detailed answers</p>
+                    <a href="https://github.com/orgs/HorizonSec/discussions" class="btn btn-secondary" target="_blank">Start Discussion</a>
+                </div>
+                
+                <div class="contact-option">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Us</h3>
+                    <p>Direct contact for specific inquiries</p>
+                    <a href="mailto:hello@horizonsec.org" class="btn btn-secondary">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The HorizonSec Project</h3>
+                    <p>Security where you are: A builder-first approach</p>
+                    <p class="tagline"><em>Security doesn't have to be mysterious. Let's build something better—together.</em></p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Project</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="roadmap.html">Roadmap</a></li>
+                            <li><a href="community.html">Community</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="https://horizonsec.github.io/horizon-documentation" target="_blank">Documentation</a></li>
+                            <li><a href="getting-started.html">Getting Started</a></li>
+                            <li><a href="https://github.com/HorizonSec" target="_blank">GitHub</a></li>
+                            <li><a href="#" target="_blank">Discord</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Modules</h4>
+                        <ul>
+                            <li><a href="features.html">GAIA Framework</a></li>
+                            <li><a href="features.html">ARTEMIS SAST</a></li>
+                            <li><a href="features.html">DEMETER Infrastructure</a></li>
+                            <li><a href="features.html">HADES Endpoint</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The HorizonSec Project. Released under the MIT License.</p>
+                <div class="footer-badges">
+                    <span class="badge">🔓 MIT Licensed</span>
+                    <span class="badge">🌟 Community Driven</span>
+                    <span class="badge">🚀 Builder First</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // FAQ Navigation
+        document.querySelectorAll('.faq-nav-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all nav items
+                document.querySelectorAll('.faq-nav-item').forEach(nav => nav.classList.remove('active'));
+                
+                // Add active class to clicked item
+                this.classList.add('active');
+                
+                // Scroll to target section
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update active nav item on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.faq-section');
+            const navItems = document.querySelectorAll('.faq-nav-item');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
