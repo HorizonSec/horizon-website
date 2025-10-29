@@ -1,8 +1,8 @@
-# HorizonSec Project Website# The HorizonSec Project Website
+# The HorizonSec Project Website
 
 
 
-The official website for The HorizonSec Project - open source security tools designed for builders.Official website for The HorizonSec Project - Open-source, modular security framework for modern application development.
+The official website for The HorizonSec Project - open source security tools designed for builders. Official website for The HorizonSec Project - Open-source, modular security framework for modern application development.
 
 
 
